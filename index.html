@@ -1,0 +1,48 @@
+index.html!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZENTRA VPN</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">Z</div>
+      <div>
+        <h1>ZENTRA</h1>
+        <p>Твой VPN. Твои правила.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="status">
+        <p class="muted">СТАТУС ПОДКЛЮЧЕНИЯ</p>
+        <h2 id="status">Не подключён</h2>
+        <div class="power">⏻</div>
+        <p class="muted">Демонстрационный режим</p>
+        <button id="connect">Подключить</button>
+      </section>
+
+      <section class="info">
+        <p>🌍 Страна <strong id="country">Германия</strong></p>
+        <p>📱 Устройство <strong id="device">Android</strong></p>
+        <p>📦 Подписка <strong>START · DEMO</strong></p>
+      </section>
+
+      <nav>
+        <button data-page="home">Главная</button>
+        <button data-page="locations">Локации</button>
+        <button data-page="subscription">Подписка</button>
+        <button data-page="profile">Профиль</button>
+      </nav>
+
+      <div id="extra"></div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
