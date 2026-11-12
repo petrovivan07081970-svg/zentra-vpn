@@ -1,0 +1,140 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #071426;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 500px;
+  margin: auto;
+  padding: 22px 18px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #087cff, #36d5ff);
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow: 0 0 25px #087cff55;
+}
+
+h1 {
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+header p {
+  color: #77baff;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.status {
+  background: linear-gradient(145deg, #102d50, #0b1d35);
+  border: 1px solid #245080;
+  border-radius: 25px;
+  padding: 27px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.muted {
+  color: #8eafd0;
+  font-size: 12px;
+}
+
+.status h2 {
+  margin: 15px 0;
+  font-size: 24px;
+}
+
+.power {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: 3px solid #249cff;
+  display: grid;
+  place-items: center;
+  font-size: 48px;
+  color: #42bdff;
+  box-shadow: 0 0 30px #168cff55;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#connect {
+  width: 100%;
+  padding: 17px;
+  margin-top: 22px;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #087cff, #16bfff);
+}
+
+.info {
+  background: #102744;
+  border: 1px solid #1d4269;
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 22px;
+}
+
+.info p {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.info strong {
+  color: #54bdff;
+  text-align: right;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+nav button {
+  background: #12365c;
+  padding: 12px 3px;
+  border-radius: 10px;
+  font-size: 11px;
+}
+
+nav button:active,
+#connect:active {
+  opacity: 0.7;
+}
+
+#extra {
+  margin-top: 20px;
+}
